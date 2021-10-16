@@ -3,6 +3,9 @@ from data import question_data
 from quiz_brain import QuizBrain
 from ui import *
 
+# test if this is working in refresh button
+# i made this in master branch
+
 question_bank = []
 for question in question_data:
     question_text = question["question"]
