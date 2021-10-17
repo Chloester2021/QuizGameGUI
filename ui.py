@@ -3,13 +3,13 @@ import tkinter
 from quiz_brain import QuizBrain
 from data import Question_data
 from question_model import Question
+
 THEME_COLOR = "#375362"
 true_path = 'images/true.png'
 false_path = 'images/false.png'
 refresh_path = 'images/download.png'
 
 class QuizInterface:
-    # pass a data object of Quizbrain as quiz_brain
     def __init__(self):
         self.question = Question
         self.get_new_list()
@@ -32,7 +32,7 @@ class QuizInterface:
         self.false_button = Button(image=false_img,border=0,highlightthickness=0, command=self.false_pressed)
         self.false_button.grid(row =2, column=1,padx=20, pady=20)
         
-        refresh_img = PhotoImage(file=refresh_path).subsample(5,5)
+        refresh_img = PhotoImage(file=refresh_path).subsample(10,10)
         self.refresh_button = Button(image=refresh_img,border=0,highlightthickness=0,command=self.refresh_pressed)
         self.refresh_button.grid(row =0, column=0)
 
